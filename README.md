@@ -19,11 +19,11 @@ Our classes are:
 
 1. Clone the repository:
 
-       `git clone https://github.com/your-repo/tomato-leaf-classification.git
+       git clone https://github.com/your-repo/tomato-leaf-classification.git
 2. Install the requirements using the `requirements.txt` file:
 
 
-       `pip install -r requirements.txt
+       pip install -r requirements.txt
 3. Create the following folders:
    - `Datasets`: This folder will contain your dataset.
    - `ML`: This folder is where you should add your ML model.
@@ -34,8 +34,8 @@ Our classes are:
 
 6. Navigate to the main directory and run the following command to start the application:
 
-       `uvicorn BACKEND.main:app
+       uvicorn BACKEND.main:app
    
 Now you should be able to access the API on your web browser on:
 
-      `http://127.0.0.1:8000/docs
+      http://127.0.0.1:8000/docs
