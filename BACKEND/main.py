@@ -6,6 +6,7 @@ from io import BytesIO
 from predict import predict_image
 import os
 import sys
+from data import disease_data  # Import the disease data
 
 # Get the path of the parent directory
 parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -19,7 +20,6 @@ app = FastAPI()
 def read_root():
     return {"message": "Welcome to the Image Classification API"}
 
-
 @app.post("/classify_image")
 async def classify_image_endpoint(image: UploadFile = File(...)):
     # Read the image data
@@ -28,9 +28,14 @@ async def classify_image_endpoint(image: UploadFile = File(...)):
     # Make predictions
     predicted_class = predict_image(BytesIO(image_data))
 
-    # Return the predicted class
-    return {"predicted_class": predicted_class}
+    # Fetch disease information
+    disease_info = disease_data.get(predicted_class, {"Description": "Unknown", "Prevention_measures": "Unknown"})
 
+    # Return the predicted class and disease information
+    return {
+        "predicted_class": predicted_class,
+        "disease_info": disease_info
+    }
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8080, reload=True)
