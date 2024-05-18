@@ -28,7 +28,7 @@ Our classes are:
    - `Datasets`: This folder will contain your dataset.
    - `ML`: This folder is where you should add your ML model.
 
-4. Download the dataset from [Tomato Leaf Disease Detection on Kaggle](https://www.kaggle.com/datasets/arjunbhasin2013/tomato-leaf-disease-detection) and place it in the `Datasets` folder.
+4. Download the dataset from [Tomato Leaf Disease Detection on Kaggle](https://www.kaggle.com/datasets/kaustubhb999/tomatoleaf) and place it in the `Datasets` folder.
 
 5. Add your ML model to the `ML` folder and change the paths in the code to point to your model.
 
