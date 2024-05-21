@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tomato Leaf Disease Classification</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap"
+          rel="stylesheet"
+        />
+        <link rel="stylesheet" href="static/css/style.css" />
+    <!-- <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Classification</title> -->
+    <link rel="stylesheet" href="static/css/style3.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Image Classification</h1>
+        <form id="uploadForm">
+            <div class="upload-box">
+                <label for="imageInput" id="imageLabel">
+                    <span class="plus-icon">+</span>
+                </label>
+                <input type="file" id="imageInput" accept="image/*" required>
+                <img id="imagePreview" src="" alt="Image Preview" style="display: none;">
+            </div>
+            <button type="submit">Classify Image</button>
+        </form>
+        <div id="result" class="result">
+            <h2>Result</h2>
+            <p><strong>Predicted Class:</strong> <span id="predictedClass">N/A</span></p>
+            <p><strong>Description:</strong> <span id="description">N/A</span></p>
+            <p><strong>Prevention Measures:</strong> <span id="preventionMeasures">N/A</span></p>
+        </div>
+    </div>
+    <script src="static/js/script3.js"></script>
+</body>
+</html>

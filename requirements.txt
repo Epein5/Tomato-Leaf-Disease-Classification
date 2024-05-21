@@ -1,3 +1,7 @@
 torch
-uvicorn
 fastapi
+uvicorn
+numpy
+Pillow
+torchvision
+jinja2
