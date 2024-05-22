@@ -1,0 +1,12 @@
+# Ignore Python bytecode files
+__pycache__/
+*.pyc
+
+ML/test.pth
+ML/train.ipynb
+
+/FRONTEND
+/Datasets
+/venv
+
+README.md

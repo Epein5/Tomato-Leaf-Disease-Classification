@@ -25,7 +25,7 @@ app = FastAPI()
 #     return {"message": "Welcome to the Image Classification API"}
 
 templates = Jinja2Templates(directory="templates")
-app.mount("/static", StaticFiles(directory="Static"), name="static")
+app.mount("/static", StaticFiles(directory="static"), name="static")
 
 @app.get("/", response_class=HTMLResponse)
 async def read_root(request: Request):

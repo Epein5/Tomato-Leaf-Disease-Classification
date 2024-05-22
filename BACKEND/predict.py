@@ -30,7 +30,9 @@ class PlantVillageCNN(nn.Module):
 
 # Load the trained PyTorch model
 model = PlantVillageCNN()
-model.load_state_dict(torch.load('../ML/test.pth'))
+
+# model.load_state_dict(torch.load(r'C:\Users\KNYpe\Desktop\Tomato-Leaf-Disease-Classification\ML\sequential_model.pth'))
+model.load_state_dict(torch.load('/app/ML/sequential_model.pth'))
 model.eval()
 
 # Define the class labels
