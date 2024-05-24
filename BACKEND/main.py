@@ -25,6 +25,7 @@ app = FastAPI()
 #     return {"message": "Welcome to the Image Classification API"}
 
 templates = Jinja2Templates(directory="templates")
+app.mount("/ML", StaticFiles(directory="ML"), name="ML")
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
 @app.get("/", response_class=HTMLResponse)
