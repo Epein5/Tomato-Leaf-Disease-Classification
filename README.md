@@ -30,12 +30,34 @@ Our classes are:
 
 4. Download the dataset from [Tomato Leaf Disease Detection on Kaggle](https://www.kaggle.com/datasets/kaustubhb999/tomatoleaf) and place it in the `Datasets` folder.
 
-5. Add your ML model to the `ML` folder and change the paths in the code to point to your model.
+5. Correct the paths to the Datasets and train the Model using the code in ML/train.ipynb.
 
-6. Navigate to the main directory and run the following command to start the application:
+6. Add your ML model to the `ML` folder and change the paths in the code to point to your model.
+
+7. Navigate to the main directory and run the following command to start the application:
 
        uvicorn BACKEND.main:app
    
 Now you should be able to access the API on your web browser on:
 
       http://127.0.0.1:8000/docs
+
+8. If you want to dockerize the the application download and install docker in your desktop run the following command in the terminal.
+
+          docker build -t <your_docker_image_name> .
+   
+10. Now you can create the docker container manually through the docker desktop or run the command in the terminal to run the container:
+
+           docker run -p 8000:8000 <your_docker_image_name>
+
+11. To publish on the docker hub.
+
+    First Create a new docker tag using the following command:
+    
+           docker tag <your_docker_image_name> <your_username>/<your_docker_image_name>:v1.0
+
+    Then push the tag to the docker hub:
+
+           docker push <your_docker_image_name>/<your_docker_image_name>:v1.0
+
+12. Now your docker image is ready to be shared and hosted in different platforms
