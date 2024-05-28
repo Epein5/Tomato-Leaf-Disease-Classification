@@ -3,7 +3,6 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 from fastapi.requests import Request
-
 from typing import List
 import uvicorn
 from io import BytesIO
@@ -11,6 +10,7 @@ from .predict import predict_image
 import os
 import sys
 from .data import disease_data  # Import the disease data
+
 
 # Get the path of the parent directory
 parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -25,7 +25,7 @@ app = FastAPI()
 #     return {"message": "Welcome to the Image Classification API"}
 
 templates = Jinja2Templates(directory="templates")
-app.mount("/static", StaticFiles(directory="static"), name="static")
+app.mount("/static", StaticFiles(directory="Static"), name="static")
 
 @app.get("/", response_class=HTMLResponse)
 async def read_root(request: Request):
@@ -38,7 +38,6 @@ async def read_info(request: Request):
 @app.get("/classify", response_class=HTMLResponse)
 async def read_info(request: Request):
     return templates.TemplateResponse("index3.html", {"request": request})
-
 
 
 @app.post("/classify_image")
