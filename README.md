@@ -61,3 +61,19 @@ Now you should be able to access the API on your web browser on:
            docker push <your_docker_image_name>/<your_docker_image_name>:v1.0
 
 12. Now your docker image is ready to be shared and hosted in different platforms
+
+### The pictures below showcase the results of the project when hosted on Azure.
+
+## Project Images
+
+![Snipping Tool 5_28_2024 7_20_42 PM](https://github.com/Epein5/Tomato-Leaf-Disease-Classification/assets/110723354/a23b2f49-dea1-4aa3-91ff-af9cf45cd064)
+![Media Player 5_28_2024 7_21_11 PM](https://github.com/Epein5/Tomato-Leaf-Disease-Classification/assets/110723354/c6153ffb-2209-41c6-b828-fb9a2f4a67de)
+![Media Player 5_28_2024 7_22_03 PM](https://github.com/Epein5/Tomato-Leaf-Disease-Classification/assets/110723354/539c128b-0151-4bd9-a1bf-1f69d19205e2)
+![Microsoft OneDrive 5_28_2024 7_21_52 PM](https://github.com/Epein5/Tomato-Leaf-Disease-Classification/assets/110723354/8fd52919-18fa-4410-b58d-21ce99b7e138)
+
+
+## Video Demonstration
+
+[![Demo Video](https://img.youtube.com/vi/aBMZkS6D_xo/0.jpg)](https://www.youtube.com/watch?v=aBMZkS6D_xo)
+
+Click the image above to watch the demo video.
