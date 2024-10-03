@@ -58,7 +58,7 @@ Now you should be able to access the API on your web browser on:
 
     Then push the tag to the docker hub:
 
-           docker push <your_docker_image_name>/<your_docker_image_name>:v1.0
+           docker push <your_username>/<your_docker_image_name>:v1.0
 
 12. Now your docker image is ready to be shared and hosted in different platforms
 
