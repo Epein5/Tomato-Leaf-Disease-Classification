@@ -92,10 +92,9 @@ Now you should be able to access the API on your web browser on:
   <img src="https://github.com/Epein5/Tomato-Leaf-Disease-Classification/assets/110723354/c6153ffb-2209-41c6-b828-fb9a2f4a67de" width="48%" />
 </p>
 <p float="left">
-  <img src="https://github.com/Epein5/Tomato-Leaf-Disease-Classification/assets/110723354/539c128b-0151-4bd9-a1bf-1f69d19205e2" width="48%" />
-  <img src="https://github.com/Epein5/Tomato-Leaf-Disease-Classification/assets/110723354/8fd52919-18fa-4410-b58d-21ce99b7e138" width="48%" />
+  <img src="https://github.com/user-attachments/assets/5dcb3b20-a430-43f7-9635-a81f7f77ea59" width="48%" />
+  <img src="https://github.com/user-attachments/assets/8464a25b-de76-4336-8295-01d9241b0493" width="48%" />
 </p>
-
 
 
 ## Video Demonstration
