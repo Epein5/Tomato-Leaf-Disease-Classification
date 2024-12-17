@@ -96,9 +96,9 @@ Now you should be able to access the API on your web browser on:
   <img src="https://github.com/user-attachments/assets/8464a25b-de76-4336-8295-01d9241b0493" width="48%" />
 </p>
 
-
+<!-- 
 ## Video Demonstration
 
 [![Demo Video](https://img.youtube.com/vi/aBMZkS6D_xo/0.jpg)](https://www.youtube.com/watch?v=aBMZkS6D_xo)
 
-Click the image above to watch the demo video.
+Click the image above to watch the demo video. -->
