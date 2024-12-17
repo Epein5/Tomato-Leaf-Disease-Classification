@@ -2,6 +2,12 @@
 
 This is a project on Tomato leaf classification with dockerization and deployment in Azure.
 
+## Features
+- Image classification for tomato leaf diseases.
+- Provides descriptions and preventive measures for identified diseases.
+- Chat system for users to ask questions about the disease.
+
+
 Our classes are:
 
 - Tomato___Bacterial_spot
@@ -17,6 +23,14 @@ Our classes are:
 
 ## How to set up
 
+### Prerequisites
+- Python 3.8+
+- FastAPI
+- Uvicorn
+- Requests
+- Jinja2
+- Google Generative AI (Gemini API)
+
 1. Clone the repository:
 
        git clone https://github.com/your-repo/tomato-leaf-classification.git
@@ -28,13 +42,20 @@ Our classes are:
    - `Datasets`: This folder will contain your dataset.
    - `ML`: This folder is where you should add your ML model.
 
+
 4. Download the dataset from [Tomato Leaf Disease Detection on Kaggle](https://www.kaggle.com/datasets/kaustubhb999/tomatoleaf) and place it in the `Datasets` folder.
 
 5. Correct the paths to the Datasets and train the Model using the code in ML/train.ipynb.
 
 6. Add your ML model to the `ML` folder and change the paths in the code to point to your model.
 
-7. Navigate to the main directory and run the following command to start the application:
+7. Add your Gemini API key:
+    - Open `BACKEND/main.py`.
+    - Find the line `gemini_api_key = 'YOUR GEMINI API HERE'`.
+    - Replace `'YOUR GEMINI API HERE'` with your actual Gemini API key.
+
+
+8. Navigate to the main directory and run the following command to start the application:
 
        uvicorn BACKEND.main:app
    
@@ -42,7 +63,7 @@ Now you should be able to access the API on your web browser on:
 
       http://127.0.0.1:8000/docs
 
-8. If you want to dockerize the the application download and install docker in your desktop run the following command in the terminal.
+9. If you want to dockerize the the application download and install docker in your desktop run the following command in the terminal.
 
           docker build -t <your_docker_image_name> .
    
