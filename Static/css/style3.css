@@ -7,9 +7,11 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin-left: 100px;
 }
 
 .container {
+    padding-left: 00px;
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
@@ -17,7 +19,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 1200px;
+    width: 800px;
+    margin-bottom: 20px;
 }
 
 h1 {
@@ -81,4 +84,74 @@ button:hover {
 
 .result p {
     margin: 5px 0;
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    min-width: 800px;
+    margin: auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    height: 800px;
+    overflow-y: auto;
+}
+
+.chat-message {
+    display: flex;
+    margin: 5px 0;
+}
+
+.chat-message.user {
+    justify-content: flex-end;
+}
+
+.chat-message.system {
+    justify-content: flex-start;
+}
+
+.chat-bubble {
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 70%;
+}
+
+.chat-bubble.user {
+    background-color: #007bff;
+    color: white;
+    text-align: right;
+}
+
+.chat-bubble.system {
+    background-color: #f1f0f0;
+    text-align: left;
+}
+
+.chat-input-container {
+    display: flex;
+    margin-top: 10px;
+}
+
+.chat-input-container input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.chat-input-container button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.chat-input-container button:hover {
+    background-color: #0056b3;
 }

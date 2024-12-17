@@ -2,3 +2,7 @@
 /Datasets
 /ML/sequential_model.pth
 /ML/test.pth
+/.vscode
+/tvenv
+**/__pycache__
+/BACKEND/__pycache__/

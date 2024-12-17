@@ -39,3 +39,40 @@ document.getElementById('uploadForm').addEventListener('submit', async function(
         }
     }
 });
+
+document.getElementById('sendChat').addEventListener('click', async function() {
+    const chatInput = document.getElementById('chatInput');
+    const message = chatInput.value;
+
+    if (message) {
+        const response = await fetch('/chat', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ message })
+        });
+
+        if (response.ok) {
+            const result = await response.json();
+            updateChat(message, 'user');
+            updateChat(result.reply, 'system');
+            chatInput.value = '';
+        } else {
+            alert('Error sending message');
+        }
+    }
+});
+
+function updateChat(message, sender) {
+    const chatMessages = document.getElementById('chatMessages');
+    const messageElement = document.createElement('div');
+    messageElement.classList.add('chat-message', sender);
+    const bubbleElement = document.createElement('div');
+    bubbleElement.classList.add('chat-bubble', sender);
+    bubbleElement.innerHTML = message;
+    messageElement.appendChild(bubbleElement);
+    chatMessages.appendChild(messageElement);
+    renderMathInElement(bubbleElement);  // Use KaTeX to render LaTeX
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+}
